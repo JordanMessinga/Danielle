@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - NJITCHE AICHA DANIELLE, Infirmière</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#2563eb", secondary: "#1e40af" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body { font-family: 'Inter', sans-serif; }
+      .hero-bg {
+          background-image: url('https://readdy.ai/api/search-image?query=professional%20medical%20environment%20with%20soft%20blue%20and%20white%20tones%2C%20modern%20hospital%20corridor%20with%20clean%20white%20walls%20and%20natural%20lighting%2C%20peaceful%20healthcare%20setting%20with%20subtle%20medical%20equipment%20in%20background%2C%20professional%20nursing%20workspace%20with%20calming%20atmosphere&width=1920&height=800&seq=hero001&orientation=landscape');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+      }
+      .skill-progress {
+          transition: width 0.8s ease-in-out;
+      }
+      .timeline-item {
+          position: relative;
+      }
+      .timeline-item::before {
+          content: '';
+          position: absolute;
+          left: -0.5rem;
+          top: 0;
+          width: 1rem;
+          height: 1rem;
+          background: #2563eb;
+          border-radius: 50%;
+          border: 3px solid white;
+          box-shadow: 0 0 0 3px #e5e7eb;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <span class="text-xl font-semibold text-gray-900"
+              >NJITCHE AICHA DANIELLE</span
+            >
+            <span class="ml-2 text-sm text-gray-600"
+              >Infirmière Diplômée d'État</span
+            >
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#about"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >À Propos</a
+            >
+            <a
+              href="#skills"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >Compétences</a
+            >
+            <a
+              href="#experience"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >Expérience</a
+            >
+            <a
+              href="#certifications"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >Formations</a
+            >
+            
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-primary transition-colors"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-bg min-h-screen flex items-center relative">
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent"
+      ></div>
+      <div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-8">
+            <div class="flex items-center space-x-6">
+              <img
+                src="img1.jpgé"
+                alt="NJITCHE AICHA DANIELLE"
+                class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-lg"
+              />
+              <div>
+                <h1 class="text-4xl font-bold text-gray-900">NJITCHE AICHA DANIELLE</h1>
+                <p class="text-xl text-primary font-medium">
+                  Infirmière Diplômée d'État
+                </p>
+                
+              </div>
+            </div>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Passionnée par les soins de qualité et l'accompagnement des
+              patients, je mets mon expertise de 4 ans au service de la santé
+              avec dévouement et professionnalisme.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <button
+                class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-secondary transition-colors whitespace-nowrap"
+              >
+                <div
+                  class="w-5 h-5 flex items-center justify-center mr-2 inline-flex"
+                >
+                  <i class="ri-download-line"></i>
+                </div>
+                Télécharger CV
+              </button>
+              <button
+                class="border-2 border-primary text-primary px-6 py-3 !rounded-button font-medium hover:bg-primary hover:text-white transition-colors whitespace-nowrap"
+              >
+                <div
+                  class="w-5 h-5 flex items-center justify-center mr-2 inline-flex"
+                >
+                  <i class="ri-mail-line"></i>
+                </div>
+                Me Contacter
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">À Propos</h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="space-y-6">
+            <p class="text-gray-700 leading-relaxed">
+              Diplômée de l'école des Infirmiers Diplomés d'Etat de Nkongsamba en
+              2022, j'ai développé une expertise solide dans les soins
+              et l'accompagnement des patients. Mon
+              parcours m'a apporté de nombreuses connaissances, enrichissant constamment mes compétences
+              techniques et humaines.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              Convaincue que la qualité des soins passe par une approche globale
+              du patient, je m'attache à allier excellence technique et
+              bienveillance dans chacune de mes interventions. Ma participation
+              à des campagnes de vaccination m'a également permis d'exercer dans
+              des contextes variés et de développer une grande adaptabilité.
+            </p>
+          </div>
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">
+              Informations Clés
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <div class="w-6 h-6 flex items-center justify-center mr-4">
+                  <i class="ri-time-line text-primary"></i>
+                </div>
+                <span class="text-gray-700"
+                  ><strong>4 années</strong> d'expérience</span
+                >
+              </div>
+              
+              <div class="flex items-center">
+                <div class="w-6 h-6 flex items-center justify-center mr-4">
+                  <i class="ri-global-line text-primary"></i>
+                </div>
+                <span class="text-gray-700"
+                  ><strong>Langues :</strong> Français, Anglais, Espagnol</span
+                >
+              </div>
+              <div class="flex items-center">
+                <div class="w-6 h-6 flex items-center justify-center mr-4">
+                  <i class="ri-map-pin-line text-primary"></i>
+                </div>
+                <span class="text-gray-700"
+                  ><strong>Localisation :</strong> Yaoundé, Cameroun</span
+                >
+              </div>
+              <div class="flex items-center">
+                <div class="w-6 h-6 flex items-center justify-center mr-4">
+                  <i class="ri-award-line text-primary"></i>
+                </div>
+                <span class="text-gray-700"
+                  ><strong>5 </strong> campagnes de vaccination</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Compétences Cliniques
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-4"
+            >
+              <i class="ri-alarm-warning-line text-primary text-xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">Petite Chirugie</h3>
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm">
+                <span class="text-gray-600">exécution des petites chirugies</span>
+                <span class="text-primary font-medium">98%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div
+                  class="bg-primary h-2 rounded-full skill-progress"
+                  style="width: 98%"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-4"
+            >
+              <i class="ri-syringe-line text-primary text-xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Thérapeutique
+            </h3>
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm">
+                <span class="text-gray-600">Administration médicamenteuse</span>
+                <span class="text-primary font-medium">95%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div
+                  class="bg-primary h-2 rounded-full skill-progress"
+                  style="width: 95%"
+                ></div>
+              </div>
+            </div>
+          </div>
+<div class="bg-white p-6 rounded-xl shadow-sm">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-4"
+            >
+              <i class="ri-heart-pulse-line text-primary text-xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Maternité
+            </h3>
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm">
+                <span class="text-gray-600">Surveillance à la paturiente</span>
+                <span class="text-primary font-medium">80%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div
+                  class="bg-primary h-2 rounded-full skill-progress"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-4"
+            >
+              <i class="ri-stethoscope-line text-primary text-xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Évaluation Clinique
+            </h3>
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm">
+                <span class="text-gray-600">Diagnostic infirmier</span>
+                <span class="text-primary font-medium">98%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div
+                  class="bg-primary h-2 rounded-full skill-progress"
+                  style="width: 98%"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-4"
+            >
+              <i class="ri-user-heart-line text-primary text-xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Relation Patient-Soignant
+            </h3>
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm">
+                <span class="text-gray-600">Communication thérapeutique</span>
+                <span class="text-primary font-medium">98%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div
+                  class="bg-primary h-2 rounded-full skill-progress"
+                  style="width: 98%"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-4"
+            >
+              <i class="ri-team-line text-primary text-xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Travail d'Équipe
+            </h3>
+            <div class="space-y-2">
+              <div class="flex justify-between text-sm">
+                <span class="text-gray-600"
+                  >Coordination pluridisciplinaire</span
+                >
+                <span class="text-primary font-medium">96%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div
+                  class="bg-primary h-2 rounded-full skill-progress"
+                  style="width: 96%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Expérience Professionnelle
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+        <div class="max-w-4xl mx-auto">
+          <div class="relative">
+            <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-300"></div>
+
+            <div class="timeline-item mb-12 ml-12">
+              <div class="bg-gray-50 p-6 rounded-xl">
+                <div class="flex flex-wrap items-center justify-between mb-4">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    Infirmière
+                  </h3>
+                  <span class="text-primary font-medium">novembre 2023 - Avril 2024 </span>
+                </div>
+                <p class="text-gray-600 font-medium mb-3">
+                  Centre de santé la victoire 
+                </p>
+                <ul class="text-gray-700 space-y-2">
+                  <li class="flex items-start">
+                    <div
+                      class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"
+                    ></div>
+                    Gestion de la pharmacie
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"
+                    ></div>
+                    Consultation des malades  
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"
+                    ></div>
+                    Administration des soins délégués 
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"
+                    ></div>
+                    Formation des nouveaux arrivants et étudiants infirmiers
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item mb-12 ml-12">
+              <div class="bg-gray-50 p-6 rounded-xl">
+                <div class="flex flex-wrap items-center justify-between mb-4">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    Infirmière
+                  </h3>
+                  <span class="text-primary font-medium">Mai 2023 - Octobre 2023</span>
+                </div>
+                <p class="text-gray-600 font-medium mb-3">
+                  Centre de santé intégré d'Ekekam III
+                </p>
+                <ul class="text-gray-700 space-y-2">
+                  <li class="flex items-start">
+                    <div
+                      class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"
+                    ></div>
+                    Gestion de la pharmacie
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"
+                    ></div>
+                    Consultation des malades  
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"
+                    ></div>
+                    Prescription des médicaments en fonction des bilans
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"
+                    ></div>
+                    Vaccinations
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item mb-12 ml-12">
+              <div class="bg-gray-50 p-6 rounded-xl">
+                <div class="flex flex-wrap items-center justify-between mb-4">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    Infirmière
+                  </h3>
+                  <span class="text-primary font-medium">Mars 2023 - avril 2023 </span>
+                </div>
+                <p class="text-gray-600 font-medium mb-3">
+                  Centre de Santé Assurance Divine à MBALGONG
+                </p>
+                <ul class="text-gray-700 space-y-2">
+                  <li class="flex items-start">
+                    <div
+                      class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"
+                    ></div>
+                    Soins infirmiers généraux et surveillance des patients
+                    hospitalisés
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"
+                    ></div>
+                    Consultation des malades  
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"
+                    ></div>
+                    Prescription des médicaments en fonction des bilans
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"
+                    ></div>
+                    Gestion de la pharmacie
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Formations & Certifications
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-lg mb-4 mx-auto"
+            >
+              <i class="ri-graduation-cap-line text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 text-center mb-2">
+              Diplôme d'État Infirmier
+            </h3>
+            <p class="text-gray-600 text-center mb-4">EIDE Nkongsamba - 2022</p>
+            <div class="text-center">
+              <button
+                class="text-primary hover:text-secondary font-medium !rounded-button whitespace-nowrap"
+              >
+                Plus de détails
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-lg mb-4 mx-auto"
+            >
+              <i class="ri-heart-pulse-line text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 text-center mb-2">
+              Stage de Perfectionnement
+            </h3>
+            <p class="text-gray-600 text-center mb-4">Hôpital de District de Banganté, 2022-2023</p>
+            <div class="text-center">
+              <button
+                class="text-primary hover:text-secondary font-medium !rounded-button whitespace-nowrap"
+              >
+                Plus de détails
+              </button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Contact</h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">
+              Informations de Contact
+            </h3>
+            <div class="space-y-6">
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mr-4"
+                >
+                  <i class="ri-mail-line text-primary"></i>
+                </div>
+                <div>
+                  <p class="text-gray-600 text-sm">Email</p>
+                  <p class="text-gray-900 font-medium">
+                    daniellenjitche2019@gmail.com
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mr-4"
+                >
+                  <i class="ri-phone-line text-primary"></i>
+                </div>
+                <div>
+                  <p class="text-gray-600 text-sm">Téléphone</p>
+                  <p class="text-gray-900 font-medium">+237 693 913 490</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mr-4"
+                >
+                  <i class="ri-map-pin-line text-primary"></i>
+                </div>
+                <div>
+                  <p class="text-gray-600 text-sm">Localisation</p>
+                  <p class="text-gray-900 font-medium">Yaoundé, Cameroun</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mr-4"
+                >
+                  <i class="ri-linkedin-line text-primary"></i>
+                </div>
+                <div>
+                  <p class="text-gray-600 text-sm">LinkedIn</p>
+                  <p class="text-gray-900 font-medium">
+                    linkedin.com/in/njitche-aicha-danielle
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <button
+                class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-secondary transition-colors whitespace-nowrap"
+              >
+                <div
+                  class="w-5 h-5 flex items-center justify-center mr-2 inline-flex"
+                >
+                  <i class="ri-download-line"></i>
+                </div>
+                Télécharger mon CV
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-white p-8 rounded-xl shadow-sm">
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">
+              Envoyez-moi un message
+            </h3>
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Nom</label
+                  >
+                  <input
+                    type="text"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2"
+                  >Sujet</label
+                >
+                <input
+                  type="text"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2"
+                  >Message</label
+                >
+                <textarea
+                  rows="5"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm resize-none"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-primary text-white py-3 !rounded-button font-medium hover:bg-secondary transition-colors whitespace-nowrap"
+              >
+                Envoyer le message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-lg font-semibold mb-4">NJITCHE AICHA DANIELLE</h3>
+            <p class="text-gray-400">
+              Infirmière Diplômée d'État passionnée par l'excellence des soins
+              et l'accompagnement des patients.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Liens Rapides</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#about" class="hover:text-white transition-colors"
+                  >À Propos</a
+                >
+              </li>
+              <li>
+                <a href="#skills" class="hover:text-white transition-colors"
+                  >Compétences</a
+                >
+              </li>
+              <li>
+                <a href="#experience" class="hover:text-white transition-colors"
+                  >Expérience</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Suivez-moi</h3>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-primary transition-colors"
+              >
+                <i class="ri-linkedin-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-primary transition-colors"
+              >
+                <i class="ri-mail-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2025 NJITCHE AICHA DANIELLE. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script id="navigation-scroll">
+      document.addEventListener("DOMContentLoaded", function () {
+        const nav = document.querySelector("nav");
+        const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 100) {
+            nav.classList.add("shadow-lg");
+          } else {
+            nav.classList.remove("shadow-lg");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+              const offsetTop = targetSection.offsetTop - 80;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
+
+    <script id="skill-animation">
+      document.addEventListener("DOMContentLoaded", function () {
+        const skillBars = document.querySelectorAll(".skill-progress");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const width = entry.target.style.width;
+                entry.target.style.width = "0%";
+                setTimeout(() => {
+                  entry.target.style.width = width;
+                }, 200);
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
+
+        skillBars.forEach((bar) => observer.observe(bar));
+      });
+    </script>
+    <script id="form-handling">
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        if (form) {
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const button = this.querySelector('button[type="submit"]');
+            const originalText = button.textContent;
+            button.textContent = "Envoi en cours...";
+            button.disabled = true;
+
+            setTimeout(() => {
+              button.textContent = "Message envoyé !";
+              setTimeout(() => {
+                button.textContent = originalText;
+                button.disabled = false;
+                form.reset();
+              }, 2000);
+            }, 1500);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
